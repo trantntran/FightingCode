@@ -1,9 +1,9 @@
 # FightingCode's Team Repository
 
-This is a repository for the CoderSchool ML Tonga Class Week 1.s
+This is a repository for the CoderSchool ML Tonga Class Week 1.
 
 ## Teammembers:
-Tobias Becher
+Tobias Becher <br>
 Tran Tracy
 
 ## Project
