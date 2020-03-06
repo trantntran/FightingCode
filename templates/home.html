@@ -1,19 +1,59 @@
-{% extends template.html %}
+{% extends "template.html" %}
 
 {% block stylescripts %}
-<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="/static/styles/main.css">
 {% endblock %}
 
 <!-- <body> -->
 {% block content %}
 
-
-
-
+<main>
+<div class="container">
+    <div class="row banner">
+        <div class="col-12 text-center mt-5">
+            <h1>Let’s see what you could earn!</h1>            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-5 search-input bg-light px-2 py-2 rounded">
+            <p class="input-description mt-3">Search for a Job and discover current openings!</p>
+            <!-- Large Input Group -->
+           <div class="form-group">
+             <label for=""></label>
+             <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Enter job title here...">
+             <small id="helpId" class="form-text text-muted">E.g. Machine Learning Engineer</small>
+           </div>
+        
+            <!-- radio buttons -->
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1"><img class="country-flags" src="/static/images/vietnam.png" alt="Vietnam"></label>
+            </div>
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2"><img class="country-flags" src="/static/images/germany.png" alt="Germany"></label>
+            </div>
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio3"><img class="country-flags" src="/static/images/india.png" alt="India"></label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio3"><img class="country-flags" src="/static/images/usa.png" alt="USA"></label>
+            </div>             
+            <!-- end radio buttons -->
+        <button class="btn btn-success w-100 my-3" type="submit">Submit</button>    
+        <!-- end input group -->
+        </div>
+    </div>
+</div>
+</main>
 
 
 <footer>
     <!-- Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+    <!-- Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
 </footer>
 {% endblock %}
 <!-- </body> -->

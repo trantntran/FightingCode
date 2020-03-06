@@ -1,0 +1,20 @@
+main{
+    height: 100vh;
+    background: url(/static/images/bg-company_window.jpg) no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.banner{
+    min-height: 60vh;
+}
+
+.input-description{
+    font-size: 3vw;
+}
+
+.country-flags{
+    max-width: 4vw;
+}
