@@ -4,12 +4,15 @@ main{
 
 .girl-bg {
     height: 100vh;
+    width: 100vw;
     background: url(/static/images/bg-girl-flip.jpg) no-repeat fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     z-index: -1;
+    position: absolute;
+    top: 0;
 }
 
 .banner{
@@ -26,4 +29,15 @@ main{
 
 .country-flags{
     max-width: 4vw;
+}
+
+.footer-elements a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.6rem;
+}
+.footer-elements a:hover {
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    font-size: 0.6rem;
 }
