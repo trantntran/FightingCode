@@ -1,6 +1,7 @@
 {% extends "template.html" %}
 
 {% block stylescripts %}
+<link href="https://fonts.googleapis.com/css?family=Martel:900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/static/styles/main.css">
 {% endblock %}
 
@@ -8,24 +9,26 @@
 {% block content %}
 
 <main>
-<div class="container">
-    <div class="row banner">
+<div class="scroll girl-bg" data-rateY="-1.2" data-rateX="0" data-direction="horizontal">
+
+<div class="container pb-5">
+    <div class="row banner mb-4">
         <div class="col-12 text-center mt-5">
-            <h1>Let’s see what you could earn!</h1>            
+            <h1 class="display-5">Let’s sing along to your favorite song!</h1>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12 col-md-5 search-input bg-light px-2 py-2 rounded">
-            <p class="input-description mt-3">Search for a Job and discover current openings!</p>
+    <div class="row input-job">
+        <div class="col-12 col-md-4 search-input bg-light px-2 py-2 rounded shadow">
+            <p class="input-description mt-3 pl-1">Search for a song title or artist</p>
             <!-- Large Input Group -->
            <div class="form-group">
              <label for=""></label>
              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Enter job title here...">
-             <small id="helpId" class="form-text text-muted">E.g. Machine Learning Engineer</small>
+             <small id="helpId" class="form-text text-muted pl-2">E.g. Pham Duy</small>
            </div>
         
             <!-- radio buttons -->
-            <div class="form-check form-check-inline">
+            <!-- <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
             <label class="form-check-label" for="inlineRadio1"><img class="country-flags" src="/static/images/vietnam.png" alt="Vietnam"></label>
             </div>
@@ -41,10 +44,31 @@
             <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
             <label class="form-check-label" for="inlineRadio3"><img class="country-flags" src="/static/images/usa.png" alt="USA"></label>
-            </div>             
+            </div>              -->
             <!-- end radio buttons -->
         <button class="btn btn-success w-100 my-3" type="submit">Submit</button>    
         <!-- end input group -->
+        </div>
+    </div>
+    <!-- end row -->
+</div>
+    <div class="container salary-axis mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron text-center">
+                    <h1 class="display-3">Song title</h1>
+                    <p class="lead">Song description</p>
+                </div>                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <!-- original lyrics -->
+            </div>
+            <div class="col-6">
+                <!-- translation -->
+            </div>
         </div>
     </div>
 </div>
@@ -54,6 +78,8 @@
 <footer>
     <!-- Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
     <!-- Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+    <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
 </footer>
+<script src="/static/js/main.js"></script>
 {% endblock %}
 <!-- </body> -->
