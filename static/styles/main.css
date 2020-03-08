@@ -38,8 +38,17 @@ main{
     width: 0.8rem;
 }
 
+/* Lyrics */
 .lyrics {
     text-align: center;
+}
+.lyrics-description{
+    text-align: justify;
+
+}
+
+.lyrics-writer{
+    font-size: 0.6rem;
 }
 
 
