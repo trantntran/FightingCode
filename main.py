@@ -11,7 +11,7 @@ def index():
     if request.method == 'POST':
       search_input = request.form.get('search_input')
 
-    data = scrape_song(search_input) if search_input != None else None
+    data = scrape_song(search_input)
     return render_template('home.html', data=data)
     
 if __name__ == '__main__':
