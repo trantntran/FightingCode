@@ -52,4 +52,4 @@ def scrap_lyric():
     except:
         pass
 
-    return artist, title, des, lyric
+    return {'artist': artist, 'title': title, 'des': des, 'lyric': lyric}
