@@ -8,11 +8,11 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    search_input = None
+    search_input = ''
     if request.method == 'POST':
       search_input = request.form.get('search_input')
 
-    data = scraping(search_input)    #{'artist': artist, 'title': title, 'des': des, 'lyric': lyric}
+    data = scrap_lyric(search_input)    #{'artist': artist, 'title': title, 'des': des, 'lyric': lyric}
 
     return render_template('home.html', data=data)
     
