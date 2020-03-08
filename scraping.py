@@ -32,7 +32,7 @@ def scrap_lyric(search_input):
     #singer
     artist = div_tag[0].find('div', attrs={'class':'lyricsh'}).h2.text
     #lyric
-    lyric = div_tag[0].find('div', attrs={'class':''}).text
+    lyric = div_tag[0].find('div', attrs={'class':''})
     
     # Get the description (if any) - writer...
    
