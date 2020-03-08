@@ -28,12 +28,21 @@ def scrape_song(search_input):
     #print( song_link )
 
 
-    # Move to Song website and parse it
+    # Move req and soup to Song website and parse it
     req = requests.get(song_link)
     soup = BeautifulSoup(req.text, 'html.parser')
 
-    print(soup.prettify())
+    song_info = {
+                    'artist': '',
+                    'title': '',
+                    'description': '',
+                    'lyrics': ''
+    }
+
+    song_info['artist'] = soup.find('div', 'lyricsh').text
+
+    
 
 
-    # TODO    
-    return {'title':'Song title', 'description':'Song description'}
+
+    return song_info
