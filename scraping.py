@@ -1,9 +1,9 @@
 from bs4 import BeautifulSoup as BS
 import requests
 
-def scrap_lyric():
+def scrap_lyric(search_input):
     # Get the 1st song in the search list
-    page_search = requests.get("http://search.azlyrics.com/search.php?q=" + input())
+    page_search = requests.get("http://search.azlyrics.com/search.php?q=" + search_input)
     soup = BS(page_search.text,'html.parser')
 
     link_search = []
