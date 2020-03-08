@@ -3,7 +3,7 @@ import requests
 
 def scrap_lyric(search_input):
     # Format Input
-    search_input = search_input.replace(' ', '+') if search_input != None else 'Hello'
+    search_input = search_input.replace(' ', '+') if search_input != '' else 'Hello'
 
     # Get the 1st song in the search list
     page_search = requests.get("http://search.azlyrics.com/search.php?q=" + search_input)
@@ -11,7 +11,7 @@ def scrap_lyric(search_input):
 
     link_search = []
     table_tag = soup.findAll('table', attrs={'class':'table table-condensed'})
-    print('\n\n\n\n\n', 'table_tag', table_tag, '\n\n\n\n')
+    
     if len(table_tag) == 2:
         td_tag = table_tag[1].find('td', attrs ={'class':'text-left visitedlyr'}).a['href']
         link_search.append(td_tag)
@@ -43,7 +43,7 @@ def scrap_lyric(search_input):
         for i in writer_tag:    
             writer_list.append(i.text)
         writer = writer_list[-1]
-        print(writer)
+        #print(writer)
 
     # Short description:
         description_str = ''
