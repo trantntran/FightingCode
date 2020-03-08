@@ -43,13 +43,12 @@ def scrap_lyric():
         print(writer)
 
     # Short description:
-        description = []
+        description_str = ''
         writer = soup_lyric.findAll('div', attrs={'class':'panel album-panel noprint'})
-        for j in writer:    
-            description.append(j.text)
-        for des in description:
-            print(des)
+        for i in writer:
+            description_str = description_str + str(i.text)
+
     except:
         pass
 
-    return artist, title, des, lyric
+    return {"artist":artist, "title":title, "description": description_str, "lyric": lyric}
