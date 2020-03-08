@@ -33,16 +33,16 @@ def scrape_song(search_input):
     soup = BeautifulSoup(req.text, 'html.parser')
 
     song_info = {
-                    'artist': '',
-                    'title': '',
-                    'description': '',
-                    'lyrics': ''
+                'artist': '',
+                'title': '',
+                'description': '',
+                'lyrics': ''
     }
 
     song_info['artist'] = soup.find('div', 'lyricsh').text
 
-    
-
-
+    # title search
+    # description search
+    # lyrics search
 
     return song_info
