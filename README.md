@@ -1,4 +1,4 @@
-# FightingCode's Team Repository
+# FightingCode's Team
 
 ## Project
 We are developing a WebApp that searches for Song Lyrics on azlyrics.com and then displays them on our site. 
